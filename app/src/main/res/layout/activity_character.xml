@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        tools:text="Имя персонажа" />
+
+    <ImageButton
+        android:id="@+id/imageButton_addToFavourites"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="onPressedToFavoritesButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ic_favourites_off" />
+
+    <TextView
+        android:id="@+id/textView_genderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_name"
+        android:text="@string/gender"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_name"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/textView_genderLabel"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="Пол" />
+
+    <TextView
+        android:id="@+id/textView_birthyearLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_gender"
+        android:text="@string/birthyear"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_birthyear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_gender"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/textView_birthyearLabel"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="Год рождения" />
+
+    <TextView
+        android:id="@+id/textView_homeWorldLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_speciesLabel"
+        android:layout_marginBottom="10dp"
+        android:text="@string/homeworld"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_homeWorld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_speciesLabel"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/textView_homeWorldLabel"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/link"
+        android:onClick="onClickHomePlanet"
+        tools:text="Родная планета" />
+
+    <TextView
+        android:id="@+id/textView_speciesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_birthyearLabel"
+        android:text="@string/species"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_species"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_birthyearLabel"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/textView_speciesLabel"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="Расса" />
+
+    <TextView
+        android:id="@+id/textView_heightLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_homeWorldLabel"
+        android:text="@string/height"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/textView_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_homeWorldLabel"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/textView_heightLabel"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Рост" />
+
+    <TextView
+        android:id="@+id/textView_massLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_heightLabel"
+        android:layout_marginTop="1dp"
+        android:text="@string/mass"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/textView_mass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_heightLabel"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/textView_massLabel"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Вес" />
+
+    <TextView
+        android:id="@+id/textView_hairColorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_massLabel"
+        android:layout_marginTop="1dp"
+        android:text="@string/hairColor"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/textView_hairColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_massLabel"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/textView_hairColorLabel"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Цвет волос" />
+
+    <TextView
+        android:id="@+id/textView_skinColorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_hairColorLabel"
+        android:layout_marginTop="1dp"
+        android:text="@string/skinColor"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/textView_skinColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_hairColorLabel"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/textView_skinColorLabel"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Цвет кожи" />
+
+    <TextView
+        android:id="@+id/textView_eyeColorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_skinColorLabel"
+        android:layout_marginTop="1dp"
+        android:text="@string/eyeColor"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/textView_eyeColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_skinColorLabel"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/textView_eyeColorLabel"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Цвет глаз" />
+
+</RelativeLayout>

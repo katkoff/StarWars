@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="Название фильма" />
+
+    <ImageButton
+        android:id="@+id/imageButton_addToFavourites"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="onPressedToFavoritesButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ic_favourites_off" />
+
+    <TextView
+        android:id="@+id/textView_directorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_title"
+        android:text="@string/director"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/textView_director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_title"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/textView_directorLabel"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Режиссер" />
+
+    <TextView
+        android:id="@+id/textView_releaseDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_director"
+        android:layout_marginTop="5dp"
+        android:text="@string/release_date"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/textView_releaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_director"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/textView_releaseDateLabel"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Дата выпуска" />
+
+    <TextView
+        android:id="@+id/textView_openingCrawl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_releaseDateLabel"
+        android:layout_marginTop="5dp"
+        tools:text="Открывающие титры" />
+
+</RelativeLayout>

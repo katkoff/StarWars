@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">GetStarWars</string>
+    <string name="waiting_text">Please wait... Loading...</string>
+    <string name="undefined">Undefined field</string>
+    <string name="addToFavorites">Add to Favorites!</string>
+    <string name="havingTheSameRecords">Already added</string>
+    <string name="goToFavorites">Go to Favorites</string>
+
+    <string name="episode">Episode</string>
+    <string name="director">Director: </string>
+    <string name="release_date">Release date: </string>
+    <string name="errorFetchMovieSummary">Error in the fetch of MovieSummary!</string>
+    <string name="errorFetchMovie">Error in the fetch of Movie!</string>
+
+    <string name="errorFetchCharacterSummary">Error in the fetch of CharacterSummary!</string>
+    <string name="homeworld">Home World: </string>
+    <string name="species">Species: </string>
+    <string name="birthyear">Birth year: </string>
+    <string name="gender">Gender: </string>
+    <string name="height">Height: </string>
+    <string name="mass">Mass: </string>
+    <string name="hairColor">Hair color: </string>
+    <string name="skinColor">Skin color: </string>
+    <string name="eyeColor">Eye color: </string>
+    <string name="errorFetchCharacter">Error in the fetch of Character!</string>
+
+    <string name="errorFetchPlanetSummary">Error in the fetch of PlanetSummary!</string>
+    <string name="planetName">Planet name: </string>
+    <string name="diameter">Diameter: </string>
+    <string name="rotation_period">Rotation period: </string>
+    <string name="orbital_period">Orbital period: </string>
+    <string name="population">Population : </string>
+    <string name="errorFetchPlanet">Error in the fetch of Planet!</string>
+
+    <string name="errorFetchFavoritesTable">Error in the fetch of FavoritesTable!</string>
+
+</resources>

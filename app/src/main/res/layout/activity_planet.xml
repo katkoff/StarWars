@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="Название планеты" />
+
+    <ImageButton
+        android:id="@+id/imageButton_addToFavourites"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="onPressedToFavoritesButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ic_favourites_off" />
+
+    <TextView
+        android:id="@+id/textView_diameterLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_name"
+        android:text="@string/diameter"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_diameter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_name"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/textView_diameterLabel"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Диаметр" />
+
+    <TextView
+        android:id="@+id/textView_rotationPeriodLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_diameterLabel"
+        android:layout_marginTop="1dp"
+        android:text="@string/rotation_period"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_rotationPeriod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_diameterLabel"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/textView_rotationPeriodLabel"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Длительность дня" />
+
+    <TextView
+        android:id="@+id/textView_orbitalPeriodLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_rotationPeriodLabel"
+        android:layout_marginTop="1dp"
+        android:text="@string/orbital_period"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_orbitalPeriod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_rotationPeriodLabel"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/textView_orbitalPeriodLabel"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Длительность года" />
+
+    <TextView
+        android:id="@+id/textView_populationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_orbitalPeriodLabel"
+        android:layout_marginTop="1dp"
+        android:text="@string/population"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_population"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_orbitalPeriodLabel"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/textView_populationLabel"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Численность населения" />
+</RelativeLayout>
